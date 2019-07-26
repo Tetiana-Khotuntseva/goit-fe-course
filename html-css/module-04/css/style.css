@@ -95,7 +95,7 @@ h1::first-letter {
 
 
 .products {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -108,8 +108,12 @@ h1::first-letter {
 
 .products-iteam {
     float: left;
+    width: 255px;
+    height: 320px;
     margin-right: 30px;
     margin-bottom: 30px;
+    position: relative;
+    list-style: none;
 
 }
 
@@ -121,63 +125,52 @@ h1::first-letter {
     margin-bottom: 0;
 }
 
-.item-card {
-    margin: 0 auto;
-    padding: 0;
-    width: 255px;
-    height: 280px;
-    display: table;
-    margin: 0 auto;
-}
 
 .item-characteristic {
-    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    /* margin: 0 auto; */
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     line-height: 32px;
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-    background-color: rgb(0, 0, 0);
-
 
 }
 
-/* "никак не получается добиться нужного подсвечивания :( если обращаться, непосредственно к li" */
-.item-card a:hover,
-.item-card a:focus {
-    background-color: rgb(26, 188, 156);
-}
-
-/* .item-name:hover,
-.item-name:focus {
-    background-color: rgb(26, 188, 156);
-}
-
-.item-price:hover,
-.item-price:hover {
-    background-color: rgba(26, 188, 156, 0.44);
-} */
-
-
-.item-name {
+div .item-name {
     float: left;
+    margin: 0;
     width: 201px;
     height: 40px;
     padding-top: 5px;
     padding-left: 10px;
+    padding-right: 10px;
+    background-color: #323232;
 }
 
-.item-price {
+div .item-price {
     float: right;
+    margin: 0;
     width: 54px;
     height: 40px;
     padding-top: 5px;
     text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.44);
+    background-color: #8c8c8c;
 }
 
+.products li:hover .item-name {
+    background-color: #1abc9c;
+}
+
+.products li:hover .item-price {
+    background-color: #7fd9c7;
+}
+
+.products-iteam {
+    cursor: pointer;
+}
 
 .section-name {
     display: block;
