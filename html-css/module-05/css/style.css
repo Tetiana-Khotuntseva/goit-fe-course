@@ -33,11 +33,6 @@ a {
     color: rgb(26, 188, 156);
 }
 
-/* .page-parametrs {
-    /* max-width: 1600px; */
-    /* margin: 0 auto; */
-/* } */
-
 header.page-parametrs {
     background-color: #fff;
 }
@@ -113,32 +108,22 @@ h1::first-letter {
 
 /* ------------ section banner --------*/
 
-.slider {
-    position: relative;
+.content {
+    width: 1112px;
+    position: absolute;
+    padding: 0;
     margin: 0 auto;
-    min-height: 600px;
-    background-image: url(../img/images/slide\ dark.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
-
-/* .content {
-    position: relative;
-    margin: 0 auto;
-
-
-} */
 
 .slider-btn {
     margin: 0;
     padding: 0;
     display: inline-block;
-    position: absolute;
-    top: 50%;
     opacity: 0.549;
-    transform: translateY(-50%);
     width: 104px;
     height: 104px;
     font-size: 60px;
@@ -146,20 +131,21 @@ h1::first-letter {
     border: none;
     background-color: rgb(84, 161, 143);
     z-index: 2;
-
 }
 
-/*  Знвю что это не совсем верное решение, но на  top: 50%; никак не срабатывае, если делать относительно врапера*/
 .left-btn {
-    left: 0;    /* right: 245px; */
+    position: absolute;
+    left: 0px;
 }
 
 .right-btn {
-    right: 0;    /* left: 245px; */
+    position: absolute;
+    right: 0px;
 }
 
 .slider-btn:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -169,26 +155,25 @@ h1::first-letter {
     list-style: none;
 }
 
-.slides img {
-    height: 600px;
-    width: 100vw;
-    object-fit: cover;
-}
-
 .slides-item {
     position: relative;
 }
 
 .slider {
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 600px;
+    background-image: url(../img/images/slide\ dark.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(0, 0, 2, 0.522);
     z-index: 1;
 }
+
 
 .slider-content {
     position: absolute;
@@ -297,15 +282,13 @@ div .item-price {
 }
 
 .section-name {
-    /* display: inline-block; */
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 80px;
+
 }
 
 h2 {
-    display: inline-block;
-
-    text-align: center;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     color: rgb(98, 98, 98);
@@ -333,7 +316,7 @@ h2 {
 
 /* --------- icons -------- */
 .overlay {
-display: none;
+    display: none;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -343,7 +326,6 @@ display: none;
     border-color: rgba(255, 255, 255, 0.7);
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.5);
-    /* opacity: 0; */
 }
 
 .icon-list-item {
@@ -354,17 +336,19 @@ display: none;
 
 }
 
-.icon-list-item a {
+.icon-list-item button {
     display: inline-block;
     border: 1px solid #fefefe;
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+
 
 }
 
-.icon-list-item a.icon-backet {
+.icon-list-item button.icon-backet {
     margin: 0;
     padding: 0;
 }
@@ -372,6 +356,20 @@ display: none;
 .icon-list-item:nth-child(n+3) {
     margin-right: 0;
 }
+
+li.icon-list-item {
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    line-height: 0px;
+    height: 50px;
+    float: left;
+    margin: 0 8px 8px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: rgba(255,255,255, 0); */
+}
+
 
 .icon-list {
     margin: 0;
@@ -389,11 +387,12 @@ display: none;
     margin-bottom: 0px;
 }
 
-li.link-button a {
+li.link-button button {
     background-color: #323232;
     width: 168px;
     padding: 0;
     list-style: none;
+    border: none;
 
 }
 
@@ -402,17 +401,16 @@ li.link-button a {
 }
 
 .products-iteam:hover .overlay {
-    /* opacity: 0.549; */
     display: block;
 }
 
-.icon-list-item:hover a {
+.icon-list-item:hover button {
     background-color: #1abc9c;
     border: none;
     opacity: 1;
 }
 
-.link-button {
+li.link-button {
     display: inline-block;
     text-decoration: none;
 }
@@ -421,17 +419,15 @@ li.link-button a {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: -0.1em;
-    line-height: 2.286;
 }
 
 
-a.icon-backet::before {
+button.icon-backet::before {
     display: inline-block;
-
     content: '';
     height: 28px;
     width: 50px;
@@ -440,7 +436,6 @@ a.icon-backet::before {
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: middle;
-
 }
 
 .icon-heart {
@@ -479,7 +474,6 @@ footer {
 .footer-details span:last-child {
     color: #1abc9c;
 }
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
