@@ -64,6 +64,7 @@ a {
 }
 
 .main-nav-link {
+    display: block;
     font-size: 14px;
     margin: 0;
     color: #1abc9c;
@@ -71,8 +72,10 @@ a {
     text-transform: uppercase;
 }
 
-.main-nav-link:hover {
+.main-nav-link:hover,
+.main-nav-link:focus{
     color: #f38181;
+    transition: color 0.2s linear;
 }
 
 

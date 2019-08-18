@@ -64,6 +64,7 @@ input[type='radio'].visually-hidden {
 }
 
 .site-nav a {
+    display: block;
     color: #000;
 }
 
