@@ -36,8 +36,7 @@
           /* Modern Browsers */
           url('../fonts/allura-v8-latin-regular.ttf') format('truetype'),
           /* Safari, Android, iOS */
-          url('../fonts/allura-v8-latin-regular.svg#Allura') format('svg');
-     /* Legacy iOS */
+         
 }
 
 /* amiri-regular - latin */
@@ -54,6 +53,5 @@
           /* Modern Browsers */
           url('../fonts/amiri-v13-latin-regular.ttf') format('truetype'),
           /* Safari, Android, iOS */
-          url('../fonts/amiri-v13-latin-regular.svg#Amiri') format('svg');
-     /* Legacy iOS */
+         
 }

@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100%;   
+}
+
+
+/* --------main---------- */
+.site-header{
+    display: block;
+    width: 100%;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.main-info{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.nav-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;  
+    justify-content: center;
+}
+
+.btn{
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    width:86px;
+    height:36px;
+    color: #ffffff;
+    text-align: center;
+
+}
+.nav-list .btn:hover,
+.nav-list .btn:focus{
+    border:2px solid rgb(255, 255, 255);  
+    border-radius: 15px;
+}
+.site-logo h1{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-info p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    
+}
+
+.main-info span{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.find-partner{
+    background-color: #ff4e50;
+    margin: 0 auto;
+    border-radius: 25px;
+
+}
+/* ----------partners---------- */
+.partners{
+    color: #666666;
+    text-align: center;
+}
+.section-name{
+    margin: 0;
+    padding: 0;
+}
+.partner-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.partner-info{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.icon{
+    margin: 0 auto;
+    width: 120px;
+    position: relative;
+    display: block;
+
+}
+
+.icon::before{
+    /* display: block; */
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+content: '';
+}
+
+.icon.icon-first::before{
+    background-image: url(../img/icons/Shape\ 1.png);
+    background-color: #ff4e50;
+}
+.icon.icon-second::before{
+    background-image: url(../img/icons/Shape\ 2.png);
+    background-color: #ffa507;
+}
+.icon.icon-third::before{
+    background-image: url(../img/icons/Shape\ 3.png);
+    background-color: #1cd7ad;
+}
+.icon.icon-fouth::before{
+    background-image: url(../img/icons/Shape\ 4.png);
+    background-color: #4e73db;
+}
+
+.other-partners{
+    color: #ff4e50;
+    border-radius: 25px;
+    border: 2px solid #ff4e50;
+}

@@ -1,0 +1,139 @@
+@media(max-width:767px){
+    .wrapper {
+        width: 320px;
+        padding: 0px 20px;
+    }
+    .site-header{
+        background-image: url(../img/phone.png);
+        height: 540px;
+        margin-bottom: 34px;
+        position: relative;
+    }
+.main-nav{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+}
+    .find-partner{
+        margin: 0 auto;
+    }
+    
+    .main-info{
+        width: 280px;
+        height: 170px;
+    }
+
+.partner-list-item{
+    width: 220px;
+    margin: auto;
+}
+.find-partner{
+    width: 280px;
+    height: 40px;
+}
+.section-name{
+    margin-bottom: 20px;
+}
+
+.partner-list{
+    padding-bottom: 30px;
+}
+/* ----------partners---------- */
+.partner-list-item:not(:last-child){
+    margin-bottom: 30px;
+}
+.other-partners{
+    width: 280px;
+    height: 40px;
+}
+}
+@media(min-width:768px){
+    .main-nav{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-header{
+        height: 700px;
+        width: 100%;
+        margin-bottom: 74px;
+    }
+.main-info{
+    width: 490px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info p{
+    font-size: 52px;
+}
+.main-info span{
+    font-size: 24px;
+}
+.find-partner{
+        width: 226px;
+    }
+    .partner-list-item{
+        width: 220px;
+        margin: 0 auto;
+    }
+    .partner-list{
+        display: flex;
+        padding-bottom: 30px;
+        
+    }
+    .partner-list :nth-child(1) { order: 1; }
+    .partner-list :nth-child(2) { order: 3; }
+    .partner-list :nth-child(3) { order: 2; }
+    .partner-list :nth-child(4) { order: 4; }
+
+    .section-name{
+        padding-bottom: 34px;
+    }
+    .other-partners{
+        width: 192px;
+        height: 40px;
+    }
+    
+}
+/* ----------partners---------- */
+
+@media(min-width:768px) and (max-width:1439px) {
+    
+    .site-header{
+        background-image: url(../img/Группа\ 2.png);
+    }
+    
+    .wrapper{
+        width: 666px;
+        padding: 0 40px;
+    }
+    .partner-list-item:not(:nth-last-child(-n+2)){
+        margin-bottom: 60px;
+     }
+
+     .partner-list-item{
+        width: 238px;
+        margin: 0 auto;
+    }
+    .partner-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+ @media(min-width:1440px) {
+     .site-header{
+         background-image: url(../img/Desktop.png);
+        }
+    .wrapper{
+        width: 940px;
+        padding: 0;
+    }
+}
