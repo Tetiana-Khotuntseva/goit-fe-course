@@ -25,12 +25,12 @@ a {
 
 .wrapper {
     margin: 0 auto;
-    height: 100%;   
+    padding: 0;
+    height: 100%;
 }
 
-
 /* --------main---------- */
-.site-header{
+.site-header {
     display: block;
     width: 100%;
     background-size: contain;
@@ -38,47 +38,36 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
 }
-.main-info{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.main-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
-.nav-list{
+.nav-list {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;  
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.btn{
-    margin: 0;
+.btn {
+    margin: 0 auto;
     padding: 0;
     border: none;
     cursor: pointer;
     background-color: transparent;
     outline: none;
-    width:86px;
-    height:36px;
+    width: 86px;
+    height: 36px;
     color: #ffffff;
     text-align: center;
 
 }
+
 .nav-list .btn:hover,
-.nav-list .btn:focus{
-    border:2px solid rgb(255, 255, 255);  
+.nav-list .btn:focus {
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
 }
-.site-logo h1{
+
+.site-logo h1 {
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -89,59 +78,67 @@ a {
     font-weight: 700;
 }
 
-.main-info p{
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-info p {
     margin: 0 auto;
+    padding: 0;
     text-align: center;
     font-size: 30px;
     line-height: 1.2;
     text-transform: uppercase;
-    
 }
 
-.main-info span{
+.main-info span {
     display: block;
     margin: 0 auto;
+    padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
     font-weight: 300;
 }
 
-.find-partner{
+.nav-btn {
+    padding: 0;
+}
+
+.find-partner {
     background-color: #ff4e50;
     margin: 0 auto;
     border-radius: 25px;
-
 }
+
 /* ----------partners---------- */
-.partners{
+.partners {
     color: #666666;
     text-align: center;
+}
+
+.section-name {
+    margin: 0;
+    padding: 0;
     padding-top: 70px;
-}
-.section-name{
-    margin: 0;
-    padding: 0;
-}
-.partner-name{
-    margin: 0;
-    padding: 0;
+
 }
 
-.partner-list{
-    list-style: none;
-    padding: 0;
+.partner-name, .partner-list, .partner-list-item, .partner-info {
     margin: 0 auto;
+    padding: 0;
 }
 
-.partner-info{
-    margin: 0;
-    padding: 0;
+
+.partner-info {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
 }
-.icon{
+
+.icon {
     margin: 0 auto;
     width: 120px;
     position: relative;
@@ -149,8 +146,7 @@ a {
 
 }
 
-.icon::before{
-    /* display: block; */
+.icon::before {
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,28 +156,32 @@ a {
     border-radius: 50%;
     bottom: 0;
     right: 0;
-content: '';
+    content: '';
 }
 
-.icon.icon-first::before{
+.icon.icon-first::before {
     background-image: url(../img/icons/Shape\ 1.png);
     background-color: #ff4e50;
 }
-.icon.icon-second::before{
+
+.icon.icon-second::before {
     background-image: url(../img/icons/Shape\ 2.png);
     background-color: #ffa507;
 }
-.icon.icon-third::before{
+
+.icon.icon-third::before {
     background-image: url(../img/icons/Shape\ 3.png);
     background-color: #1cd7ad;
 }
-.icon.icon-fouth::before{
+
+.icon.icon-fouth::before {
     background-image: url(../img/icons/Shape\ 4.png);
     background-color: #4e73db;
 }
 
-.other-partners{
+.other-partners {
     color: #ff4e50;
     border-radius: 25px;
     border: 2px solid #ff4e50;
+    background-color: transparent;
 }

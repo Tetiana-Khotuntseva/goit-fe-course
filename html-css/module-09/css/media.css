@@ -1,0 +1,118 @@
+@media(max-width:767px) {
+    .wrapper {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .site-header {
+        background-image: url(../img/phone.png);
+        height: 540px;
+        padding-top: 20px;
+    }
+
+    .nav-list {
+        margin-bottom: 116px;
+        justify-content: center;
+
+    }
+
+    .main-nav {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .main-info p {
+        margin-bottom: 20px;
+    }
+
+    .main-info span {
+        margin-bottom: 20px;
+    }
+
+    .find-partner {
+        width: 280px;
+        height: 40px;
+    }
+
+    .section-name {
+        margin-bottom: 20px;
+    }
+
+    /* ----------partners---------- */
+    .partner-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .main-part {
+        margin-bottom: 30px;
+    }
+
+    .other-partners {
+        width: 280px;
+        height: 40px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .main-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+
+    .site-header {
+        height: 700px;
+    }
+
+    .main-info p {
+        font-size: 51,97px;
+        margin-bottom: 42px;
+    }
+
+    .main-info span {
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+
+    .find-partner {
+        width: 226px;
+    }
+
+    .section-name {
+        padding-bottom: 34px;
+    }
+
+    .main-part {
+        margin-bottom: 40px;
+    }
+
+    .other-partners {
+        width: 192px;
+        height: 40px;
+    }
+
+}
+
+/* ----------partners---------- */
+
+@media(min-width:768px) and (max-width:959px) {
+
+    .site-header {
+        background-image: url(../img/Group2.png);
+    }
+
+    .partner-list-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 60px;
+    }
+}
+
+@media(min-width:960px) {
+    .site-header {
+        background-image: url(../img/Desktop.png);
+    }
+
+}
