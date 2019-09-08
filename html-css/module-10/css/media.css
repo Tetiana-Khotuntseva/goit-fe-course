@@ -1,0 +1,9 @@
+@media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi),
+(min-resolution 2dppx) {
+    .page-header {
+        background-image: url(../img/Layer\ 15@2x.png);
+    }
+
+}
