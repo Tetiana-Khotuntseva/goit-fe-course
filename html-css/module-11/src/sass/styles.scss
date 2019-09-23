@@ -1,0 +1,42 @@
+
+@import 'helpers/var';
+// @import 'helpers/placeholders';
+@import './normalize';
+@import './bases';
+
+// components
+
+@import 'components/container';
+@import 'components/page-header';
+
+// navigation
+
+// @import 'components/list';
+@import 'components/page-nav';
+@import 'components/nav-list';
+@import 'components/icon';
+@import 'components/link-icon';
+@import 'components/site-nav__link';
+@import 'components/btn';
+@import 'components/cite-descr';
+
+// main part
+
+@import 'components/section__title';
+@import 'components/services__list';
+@import 'components/services__item';
+@import 'components/services__icon';
+
+// section team
+
+@import 'components/under-card';
+@import 'components/team__list';
+@import 'components/overlay';
+@import 'components/team__item';
+@import 'components/background';
+
+// footer
+@import 'components/site-footer';
+@import 'components/write-your-email';
+@import 'components/press-the-button';
+

@@ -1,0 +1,7 @@
+.background {
+    width: $card-width;
+    height: $card-height;
+    position: absolute;
+    background-color: $background-color;
+    z-index: -1;
+}

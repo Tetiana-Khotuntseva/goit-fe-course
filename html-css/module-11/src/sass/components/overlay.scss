@@ -1,0 +1,12 @@
+.overlay {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: $card-width;
+    height: $card-height;
+    z-index: 2;
+    background-image: linear-gradient(to top, $svg-activ-color, $btn-activ-color);
+    transition: transform 0.2s linear;
+
+}

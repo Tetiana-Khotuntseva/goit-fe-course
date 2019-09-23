@@ -1,0 +1,13 @@
+.page-header {
+    
+    background-image: $back-ground-image;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 50px;
+    padding-bottom: 230px;
+
+@media (min-resolution: 192dpi){
+    background-image: url(../../images/Layer15@2x.png);
+}
+}

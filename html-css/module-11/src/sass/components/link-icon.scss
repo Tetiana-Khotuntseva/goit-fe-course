@@ -1,0 +1,12 @@
+.link__icon svg {
+    height: $svg-height;
+    width: $svg-width;
+    fill: $svg-fill-color;
+
+    &:focus,
+    &:hover{
+        color: $svg-activ-color;
+        fill: $svg-activ-color;
+        transition: color 0.2s linear;
+        }
+}

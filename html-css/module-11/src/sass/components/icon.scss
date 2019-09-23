@@ -1,0 +1,35 @@
+.icon {
+    background-color: $svg-activ-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    display: block;
+    transition: background-color 0.2s linear;
+    fill: $after-color;
+
+    &:hover,
+    &:focus{
+        background-color: $after-color;
+        fill: $svg-fill-color;
+    }
+
+}
+
+
+.icon__list {
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.icon__item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.icon svg {
+    width: 28px;
+    height: 100%;
+    margin-left: 15px;
+}
