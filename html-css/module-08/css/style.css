@@ -38,20 +38,7 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
 }
-.main-info{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.main-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
 .nav-list{
     padding: 0;
     margin: 0;
@@ -59,10 +46,14 @@ a {
     display: flex;  
     justify-content: center;
 }
+.main-info{
+    margin: 0 auto;
+}
 
 .btn{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    display: block;
     border: none;
     cursor: pointer;
     background-color: transparent;

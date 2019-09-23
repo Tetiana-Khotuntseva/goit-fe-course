@@ -15,20 +15,24 @@
         position: relative;
     }
 .main-nav{
-    /* height: 170px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 40px;
 
 }
+.nav-list{
+    margin-bottom: 120px;
+}
     .find-partner{
         margin: 0 auto;
     }
     
-    .main-info{
-        width: 280px;
-        height: 170px;
+    .main-info p{
+        margin-bottom: 20px;
+    }
+    .main-info span{
+        margin-bottom: 20px;
     }
 
 .partner-list-item{
@@ -71,17 +75,19 @@
     }
 .main-info{
     width: 490px;
-    /* height: 240px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-top: 154px;
 }
+    
 
 .main-info p{
     font-size: 52px;
+    margin-bottom: 42px;
+
 }
+
 .main-info span{
     font-size: 24px;
+    margin-bottom: 38px;
 }
 .find-partner{
         width: 226px;
