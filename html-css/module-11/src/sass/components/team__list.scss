@@ -1,5 +1,6 @@
 .team__list {
   @extend %list;
+  padding: 0;
   width: 1202px;
   justify-content: space-around;
 }
