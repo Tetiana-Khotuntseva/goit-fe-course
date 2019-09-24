@@ -1,4 +1,5 @@
 .services__list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;

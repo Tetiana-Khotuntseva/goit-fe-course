@@ -1,4 +1,6 @@
+.nav__list,
 .icon__list,
+.services__list,
 .team__list {
   display: flex;
   list-style: none;
