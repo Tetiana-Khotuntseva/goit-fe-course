@@ -1,15 +1,15 @@
 .write-your-email {
-    display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: $card-width;
+  height: 40px;
+
+  & input {
     padding: 0;
     margin: 0;
-    width: $card-width;
-    height: 40px;
-
-    & input {
-        padding: 0;
-        margin: 0;
-        padding-left: 7px;
-    }
+    padding-left: 7px;
+  }
 }

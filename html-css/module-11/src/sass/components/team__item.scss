@@ -1,14 +1,14 @@
 .team__item {
-    width: 380px;
+  width: 380px;
 
-    &:hover .overlay {
-        display: flex;
-        transform: translate(-10px, -10px);
-    }
+  &:hover .overlay {
+    display: flex;
+    transform: translate(-10px, -10px);
+  }
 
-    &:hover img {
-        transform: translate(-10px, -10px);
-        transition: transform 0.2s linear;
-    
-    }
+  &:hover img {
+    transform: translate(-10px, -10px);
+    transition: transform 0.2s linear;
+
+  }
 }

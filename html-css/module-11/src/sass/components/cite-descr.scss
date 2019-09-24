@@ -1,41 +1,39 @@
 .cite-descr {
-    text-align: center;
-    padding-top: 200px;
+  text-align: center;
+  padding-top: 200px;
 
-    & .btn {
-        &:hover{
-            color: $btn-activ-color;
-            border-color: $btn-activ-color;
-        }
+  & .btn {
+    &:hover {
+      color: $btn-activ-color;
+      border-color: $btn-activ-color;
     }
-
+  }
 }
+
 .cite-descr__title {
-    display: block;
-    font-size: $descr-h2-font-size;
-    margin: 0;
-    color: $svg-fill-color;
-    font-family: $descr-title-font-style;
-    margin-bottom: 50px;
+  display: block;
+  font-size: $descr-h2-font-size;
+  margin: 0;
+  color: $svg-fill-color;
+  font-family: $descr-title-font-style;
+  margin-bottom: 50px;
 }
 
 .cite-descr__welcome {
-    display: block;
-    font-size: $descr-h3-font-size;
-    margin: 0;
-    padding: 0;
-    color: $svg-fill-color;
-    font-family: $nav-font-style;
-    text-transform: uppercase;
-    font-weight: $main-font-weight;
-    margin-bottom: 100px;
-    line-height: 0.9;
+  display: block;
+  font-size: $descr-h3-font-size;
+  margin: 0;
+  padding: 0;
+  color: $svg-fill-color;
+  font-family: $nav-font-style;
+  text-transform: uppercase;
+  font-weight: $main-font-weight;
+  margin-bottom: 100px;
+  line-height: 0.9;
 
-    & p {
-        padding: 0;
-        margin: 0;
-    }
+  & p {
+    padding: 0;
+    margin: 0;
+  }
 
 }
-
-
