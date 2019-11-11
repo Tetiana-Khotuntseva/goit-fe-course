@@ -1,0 +1,22 @@
+"use scrict";
+
+const products = [
+    {name: 'Radar', price: 1300, quantity: 4},
+    {name: 'Skaner', price: 2700, quantity: 3},
+    {name: 'Droid', price: 400, quantity: 7},
+    {name: 'Zaxvat', price: 1200, quantity: 2},
+  ]
+
+  function calculateTotalPrice(arr, productName){
+    let result;
+    for (let element of arr) {
+    //   console.log(element)
+      if (element.name === productName) {
+        result = element.price * element.quantity;
+      }
+    }
+    return result;
+  }
+
+  console.log(calculateTotalPrice(products, 'Skaner'));
+  console.log(calculateTotalPrice(products, 'Droid'))

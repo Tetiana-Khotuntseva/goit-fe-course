@@ -1,6 +1,7 @@
 "use scrict";
 function checkForSpam(str) {
     let array = str.toLowerCase();
+    const sumFunk = args => console.log(args)
     if (array.includes('sale')){
       return true;
       } else if (array.includes('spam')){
@@ -8,6 +9,7 @@ function checkForSpam(str) {
       }else{
         return false;
       }
+      
   }
   
 console.log(checkForSpam('Latest technologysnews')); // false
