@@ -14,3 +14,4 @@ const user = {
   for (const key of keys) {
   console.log(`${key}:`, user[key]);
   };
+  
