@@ -1,20 +1,7 @@
-const path = require('path');
-console.log('DIRNAME: ', __dirname);
+const webpackMerge = require('webpack-merge');
+const loadSharedConfig = require('./configs/shared');
 
-module.export = {
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(
-      '/Users/tanya/goit-fe-course/javaScript/goit-js-hw-10',
-      'dist',
-    ),
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-      },
-    ],
-  },
-};
+const loadModeConfig = env => require(`./configs/${env.mode}`)(env);
+
+module.exports = env =>
+  webpackMerge(loadSharedConfig(env), loadModeConfig(env));
